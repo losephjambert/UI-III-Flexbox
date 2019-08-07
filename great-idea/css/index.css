@@ -179,38 +179,100 @@ img {
 
 /* Containers */
 .wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 50px 0 100px 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 25px 100px 50px;
 }
 .container {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  flex: auto;
+}
+.container.row {
+  flex-flow: row wrap;
+}
+.container.column {
+  flex-flow: column wrap;
 }
 .container.__100 {
-  width: 100%;
+  flex: 0 100%;
+}
+.container.__80 {
+  flex: 0 80%;
 }
 .container.__75 {
-  width: 75%;
+  flex: 0 75%;
+}
+.container.__60 {
+  flex: 0 60%;
 }
 .container.__50 {
-  width: 49%;
+  flex: 0 50%;
+}
+.container.__40 {
+  flex: 0 40%;
 }
 .container.__33 {
-  width: 32.33333333%;
+  flex: 0 33.333%;
+}
+.container.__25 {
+  flex: 0 25%;
+}
+.container.__20 {
+  flex: 0 20%;
+}
+.container.__10 {
+  flex: 0 10%;
+}
+/* Flex Helpers */
+
+/* Justify Content */
+.jc-sa {
+  justify-content: space-around;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-se {
+  justify-content: space-evenly;
+}
+.jc-c {
+  justify-content: center;
+}
+.jc-fs {
+  justify-content: flex-start;
+}
+.jc-fe {
+  justify-content: flex-end;
+}
+.jc-b {
+  justify-content: baseline;
+}
+/* Align Items */
+.ai-stretch {
+  align-items: stretch;
+}
+.ai-c {
+  align-items: center;
+}
+.ai-fs {
+  align-items: flex-start;
+}
+.ai-fe {
+  align-items: flex-end;
+}
+.ai-b {
+  align-items: baseline;
 }
 
 /* Header */
-nav {
-  display: inline-block;
-}
 nav a {
-  display: inline-block;
-  padding: 10px 5px 10px 0;
-  margin: 9px 60px 9px 0;
+  padding: 10px 5px;
+  margin-left: 40px;
+}
+nav a:first-child {
+  margin-left: 0;
 }
 h1.logo {
-  display: inline-block;
   text-indent: -9999px;
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
@@ -218,26 +280,20 @@ h1.logo {
   background-position: center;
   height: 50px;
   width: 150px;
-  position: absolute;
-  right: 0;
+  margin: 0 0 0 auto;
 }
-
 .introduction {
-  padding: 75px 0 0;
+  margin-top: 50px;
 }
 .introduction h2 {
   text-align: center;
-  padding: 0 69px;
   font-size: 4.5em;
+  max-width: 285px;
 }
 .introduction button {
-  display: block;
   padding: 5px 35px;
   margin: 0 auto;
   cursor: pointer;
-}
-.introduction .headline {
-  top: -80px;
 }
 
 /* Main */
