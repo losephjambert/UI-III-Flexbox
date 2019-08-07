@@ -139,6 +139,7 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
+/* Typography */
 h1,
 h2,
 h3,
@@ -147,6 +148,18 @@ h5 {
   font-family: "Bangers", cursive;
   letter-spacing: 1px;
   margin-bottom: 15px;
+}
+.small {
+  font-size: 0.85em;
+}
+.medium {
+  font-size: 1.5em;
+}
+.large {
+  font-size: 3em;
+}
+.x-large {
+  font-size: 4.5em;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
@@ -165,6 +178,7 @@ button {
   border: none;
   outline: none;
   box-shadow: 0 0 0 1px black;
+  cursor: pointer;
 }
 img {
   width: 100%;
@@ -181,7 +195,7 @@ img {
 .wrapper {
   display: flex;
   flex-direction: column;
-  padding: 50px 25px 100px 50px;
+  padding: 50px 50px 100px 50px;
 }
 .container {
   display: flex;
@@ -293,7 +307,6 @@ h1.logo {
 .introduction button {
   padding: 5px 35px;
   margin: 0 auto;
-  cursor: pointer;
 }
 
 /* Main */
@@ -328,7 +341,7 @@ address .address,
 address .phone {
   margin-bottom: 20px;
 }
-footer p {
+p.copyright {
   display: block;
   text-align: center;
 }
